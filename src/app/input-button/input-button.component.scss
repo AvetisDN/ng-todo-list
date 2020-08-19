@@ -1,0 +1,27 @@
+.btn {
+    background-color: #0e9938;
+    color: #ffffff;
+    border:none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 300ms ease;
+    margin-left: 4px;
+    &:hover {
+        background-color: #0ac041;
+    }
+    &:disabled {
+        background: #5f886b;
+        cursor: default;
+    }
+}
+.todo-input {
+    border: 1px solid #9eaaa1;
+    border-radius: 5px;
+    padding: 4px 15px;
+    font-size: 1rem;
+}
+.todo-input:focus {
+    border: 1px solid #246e36;
+}

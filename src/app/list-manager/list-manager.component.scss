@@ -1,0 +1,15 @@
+.todo-list {
+    margin: 1rem 0;
+    li {
+        padding: 10px;
+        margin-bottom: 4px;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        align-items: center;
+        line-height: 1em;
+        transition: 200ms ease;
+        &:hover {
+            background-color: #ece8d9;
+        }
+    }
+}

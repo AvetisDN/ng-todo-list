@@ -1,0 +1,10 @@
+<input  #inputRef
+        class="todo-input"
+        type='text'
+        placeholder="New ToDo"
+        [value]="todoTitle"
+        (keyup) = "changeTodoTitle(inputRef.value)"
+        (keyup.enter)="submitTodoItem(inputRef.value)">
+<button class="btn" (click)="submitTodoItem(inputRef.value)" [disabled]="isError">
+    ADD
+</button>

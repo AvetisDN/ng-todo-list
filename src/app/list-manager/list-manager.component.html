@@ -1,0 +1,10 @@
+<app-input-button (submit)="addTodoItem($event)"></app-input-button>
+  <ul class="todo-list">
+    <li *ngFor="let listItem of todoList; index as i">
+        <app-todo-item  [item]="listItem" 
+                        [index]="i" 
+                        (remove)="removeTodoItem($event)"
+                        (update)="updateTodoItem($event.item, $event.changedItem)"
+                        ></app-todo-item>
+    </li>
+</ul>
